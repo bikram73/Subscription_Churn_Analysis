@@ -52,7 +52,7 @@ Subscription_Churn_Analysis/
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/<your-username>/Subscription_Churn_Analysis.git
+git clone https://github.com/https://github.com/bikram73/Subscription_Churn_Analysis.git
 cd Subscription_Churn_Analysis
 ```
 
