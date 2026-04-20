@@ -109,8 +109,6 @@ Source dataset (Kaggle): https://www.kaggle.com/datasets/blastchar/telco-custome
 
 The Telco dataset does not directly contain OTT telemetry fields like exact app usage frequency, last login days, and customer support call counts.
 
-To match the PRD schema, this project engineers deterministic proxy features from available service and support columns and clearly documents this in the analysis outputs.
-
 ## 📜 License
 
 This project is licensed under the MIT License.
