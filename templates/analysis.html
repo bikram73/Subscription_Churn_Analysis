@@ -52,6 +52,32 @@
 					<p>High-Risk Segment Share</p>
 				</article>
 			</div>
+			<div class="card">
+				<h3>Detailed Model Evaluation</h3>
+				<ul>
+					<li>Logistic Regression Accuracy: 0.7946</li>
+					<li>Random Forest Accuracy: 0.7584</li>
+					<li>Random Forest Precision: 0.5491</li>
+					<li>Random Forest Recall: 0.5080</li>
+					<li>Random Forest F1 Score: 0.5278</li>
+					<li>Random Forest ROC-AUC: 0.7887</li>
+				</ul>
+				<p class="note">
+					Interpretation: Logistic Regression gives better overall accuracy, while Random Forest is used for richer non-linear signal discovery and feature importance analysis.
+				</p>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2>How To Read This Analysis</h2>
+			<div class="card">
+				<ul>
+					<li>The base dataset is Telco Customer Churn and is adapted to OTT/SaaS style business questions.</li>
+					<li>Features such as usage frequency, last login days, and support calls are engineered proxies.</li>
+					<li>Each visualization highlights one churn driver; model metrics validate predictive reliability.</li>
+					<li>Risk segmentation converts model probabilities into actionable retention groups.</li>
+				</ul>
+			</div>
 		</section>
 
 		<section class="section">
@@ -124,6 +150,42 @@
 		</section>
 
 		<section class="section">
+			<h2>Top Churn Signals Identified</h2>
+			<div class="insight-grid">
+				<article class="insight-card primary">
+					<h3>Monthly Charges</h3>
+					<p>Most influential feature. Higher monthly billing aligns with higher churn probability.</p>
+				</article>
+				<article class="insight-card secondary">
+					<h3>Tenure</h3>
+					<p>Low-tenure customers are more vulnerable to churn, especially in early lifecycle stages.</p>
+				</article>
+				<article class="insight-card accent">
+					<h3>Support Behavior</h3>
+					<p>Rising support interaction levels are a strong dissatisfaction and churn warning signal.</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2>Risk Segmentation Logic</h2>
+			<div class="insight-grid">
+				<article class="insight-card primary">
+					<h3>Low Risk</h3>
+					<p>Churn probability <= 0.40. Maintain with regular communication and loyalty offers.</p>
+				</article>
+				<article class="insight-card secondary">
+					<h3>Medium Risk</h3>
+					<p>Churn probability between 0.40 and 0.70. Engage with targeted usage nudges.</p>
+				</article>
+				<article class="insight-card accent">
+					<h3>High Risk</h3>
+					<p>Churn probability > 0.70. Prioritize proactive retention, incentives, and human support.</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="section">
 			<h2>Key Business Recommendations</h2>
 			<div class="card">
 				<ul>
@@ -131,6 +193,20 @@
 					<li>Improve onboarding quality in the first 12 months.</li>
 					<li>Launch engagement campaigns for low-usage users.</li>
 					<li>Provide proactive support for users with repeated service issues.</li>
+				</ul>
+				<p>
+					Execution priority: Start with High-Risk monthly-plan customers, then roll out Medium-Risk engagement workflows.
+				</p>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2>Assumptions and Limitations</h2>
+			<div class="card">
+				<ul>
+					<li>Some OTT-style behavior fields are inferred from telecom service attributes, not direct app telemetry.</li>
+					<li>Results are valid for this dataset distribution and should be re-evaluated for other markets or periods.</li>
+					<li>Threshold-based segmentation can be tuned based on business cost of churn and campaign budget.</li>
 				</ul>
 			</div>
 		</section>
