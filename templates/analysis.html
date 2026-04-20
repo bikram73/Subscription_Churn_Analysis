@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Churn Analysis Outputs</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<header>
+		<div class="container nav">
+			<div class="brand">Subscription Churn Analysis</div>
+			<nav class="nav-links">
+				<a href="index.html">Overview</a>
+				<a href="analysis.html">Analysis</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container">
+		<section class="hero">
+			<h1>Analysis Outputs and Insights</h1>
+			<p>
+				Visual outputs generated from the churn pipeline, along with business interpretation of model results.
+			</p>
+			<div class="hero-banner">
+				<strong>Best Insight:</strong> New customers and high monthly-charge users show higher churn risk.
+			</div>
+		</section>
+
+		<section class="section">
+			<h2>Model Snapshot</h2>
+			<div class="kpi-grid">
+				<article class="kpi">
+					<h3>0.7946</h3>
+					<p>Logistic Regression Accuracy</p>
+				</article>
+				<article class="kpi">
+					<h3>0.7584</h3>
+					<p>Random Forest Accuracy</p>
+				</article>
+				<article class="kpi">
+					<h3>0.7887</h3>
+					<p>Random Forest ROC-AUC</p>
+				</article>
+				<article class="kpi">
+					<h3>26.58%</h3>
+					<p>Overall Churn Rate</p>
+				</article>
+				<article class="kpi">
+					<h3>19.80%</h3>
+					<p>High-Risk Segment Share</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2>Visualization Outputs</h2>
+			<div class="chart-grid">
+				<article class="chart-card">
+					<img src="../outputs/churn_rate.png" alt="Churn rate distribution chart" />
+					<div class="chart-copy">
+						<h3>Churn Distribution</h3>
+						<p>Shows churn and non-churn customer counts with overall churn rate.</p>
+					</div>
+				</article>
+
+				<article class="chart-card">
+					<img src="../outputs/tenure_churn.png" alt="Tenure versus churn chart" />
+					<div class="chart-copy">
+						<h3>Tenure vs Churn</h3>
+						<p>New users churn significantly more than loyal long-tenure users.</p>
+					</div>
+				</article>
+
+				<article class="chart-card">
+					<img src="../outputs/usage_churn.png" alt="Usage frequency versus churn chart" />
+					<div class="chart-copy">
+						<h3>Usage vs Churn</h3>
+						<p>Lower usage intensity is associated with higher churn tendency.</p>
+					</div>
+				</article>
+
+				<article class="chart-card">
+					<img src="../outputs/charges_churn.png" alt="Monthly charges versus churn boxplot" />
+					<div class="chart-copy">
+						<h3>Monthly Charges vs Churn</h3>
+						<p>Higher monthly charges correlate with elevated churn risk.</p>
+					</div>
+				</article>
+
+				<article class="chart-card">
+					<img src="../outputs/support_churn.png" alt="Support calls versus churn chart" />
+					<div class="chart-copy">
+						<h3>Support Calls vs Churn</h3>
+						<p>Frequent support interactions indicate higher dissatisfaction and churn risk.</p>
+					</div>
+				</article>
+
+				<article class="chart-card">
+					<img src="../outputs/correlation_heatmap.png" alt="Correlation heatmap" />
+					<div class="chart-copy">
+						<h3>Correlation Heatmap</h3>
+						<p>Highlights positive and negative relationships between features and churn.</p>
+					</div>
+				</article>
+
+				<article class="chart-card">
+					<img src="../outputs/model_accuracy.png" alt="Model accuracy comparison chart" />
+					<div class="chart-copy">
+						<h3>Model Accuracy Comparison</h3>
+						<p>Compares predictive performance between Logistic Regression and Random Forest.</p>
+					</div>
+				</article>
+
+				<article class="chart-card">
+					<img src="../outputs/feature_importance.png" alt="Feature importance chart" />
+					<div class="chart-copy">
+						<h3>Feature Importance</h3>
+						<p>Top drivers include monthly charges, tenure, and support-related behavior.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2>Key Business Recommendations</h2>
+			<div class="card">
+				<ul>
+					<li>Offer targeted discounts to high-risk monthly-plan customers.</li>
+					<li>Improve onboarding quality in the first 12 months.</li>
+					<li>Launch engagement campaigns for low-usage users.</li>
+					<li>Provide proactive support for users with repeated service issues.</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			Output source: generated images from the project pipeline in the outputs folder.
+		</div>
+	</footer>
+</body>
+</html>

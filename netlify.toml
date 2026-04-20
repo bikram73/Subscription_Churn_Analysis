@@ -1,0 +1,16 @@
+[build]
+  publish = "."
+  command = ""
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/"
+  to = "/templates/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/analysis.html"
+  to = "/templates/analysis.html"
+  status = 200

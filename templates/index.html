@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Subscription Churn Analysis</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<header>
+		<div class="container nav">
+			<div class="brand">Subscription Churn Analysis</div>
+			<nav class="nav-links">
+				<a href="index.html">Overview</a>
+				<a href="analysis.html">Analysis</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container">
+		<section class="hero">
+			<h1>Predicting Customer Churn for OTT and SaaS</h1>
+			<p>
+				End-to-end churn analysis project using the Telco Customer Churn dataset.
+				This project identifies churn drivers, predicts churn probability, and segments
+				high-risk users for business action.
+			</p>
+			<div class="hero-actions">
+				<a class="button button-primary" href="analysis.html">View Analysis Outputs</a>
+				<a class="button button-secondary" href="https://www.kaggle.com/datasets/blastchar/telco-customer-churn" target="_blank" rel="noopener noreferrer">Dataset Source</a>
+			</div>
+			<div class="hero-banner">
+				<strong>Dataset:</strong> Telco Customer Churn (Kaggle) | <strong>Models:</strong>
+				Logistic Regression, Random Forest | <strong>Goal:</strong> Reduce churn through data-driven retention strategy
+				<div class="chip-row">
+					<span class="chip primary">Python</span>
+					<span class="chip secondary">EDA + Visualization</span>
+					<span class="chip accent">Churn Prediction</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="kpi-grid">
+			<article class="kpi">
+				<h3>7032</h3>
+				<p>Customers analyzed</p>
+			</article>
+			<article class="kpi">
+				<h3>26.58%</h3>
+				<p>Overall churn rate</p>
+			</article>
+			<article class="kpi">
+				<h3>0.7946</h3>
+				<p>Logistic Regression accuracy</p>
+			</article>
+			<article class="kpi">
+				<h3>0.7584</h3>
+				<p>Random Forest accuracy</p>
+			</article>
+			<article class="kpi">
+				<h3>19.80%</h3>
+				<p>High-risk users</p>
+			</article>
+		</section>
+
+		<section class="section">
+			<h2>Project Objectives</h2>
+			<div class="card">
+				<ul>
+					<li>Calculate churn rate across customer groups</li>
+					<li>Identify key factors causing churn</li>
+					<li>Build a prediction model for churn probability</li>
+					<li>Segment users into Low, Medium, and High risk</li>
+					<li>Recommend practical retention strategies</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2>Workflow</h2>
+			<div class="card">
+				<ol>
+					<li>Data loading and validation from the source CSV</li>
+					<li>Data cleaning and preprocessing</li>
+					<li>Feature engineering for engagement and risk signals</li>
+					<li>Exploratory analysis and correlation study</li>
+					<li>Model training and evaluation</li>
+					<li>Risk segmentation and business recommendation generation</li>
+				</ol>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2>Tech Stack</h2>
+			<div class="insight-grid">
+				<article class="insight-card primary">
+					<h3>Data Processing</h3>
+					<p>Pandas, NumPy</p>
+				</article>
+				<article class="insight-card secondary">
+					<h3>Visualization</h3>
+					<p>Matplotlib, Seaborn</p>
+				</article>
+				<article class="insight-card accent">
+					<h3>Machine Learning</h3>
+					<p>Scikit-learn</p>
+				</article>
+			</div>
+			<p class="note">
+				The original Telco dataset does not directly include OTT telemetry fields like usage frequency,
+				last login days, and support calls. These are engineered as deterministic proxy features.
+			</p>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			Subscription Churn Analysis | Built for analytics, prediction, and retention strategy planning.
+		</div>
+	</footer>
+</body>
+</html>
